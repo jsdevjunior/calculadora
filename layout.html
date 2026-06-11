@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* MAIN */
+        main {
+            padding: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cards">
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>Conteúdo do primeiro card.</p>
+            </div>
+
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>Conteúdo do segundo card.</p>
+            </div>
+
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>Conteúdo do terceiro card.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Meu Site - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
